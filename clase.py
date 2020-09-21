@@ -1,20 +1,30 @@
+
 class Lavadora:
     def __init__(self):
         pass
-    def lavar(self,temperatura = 'caliente'):
-        self._llenar_tanque_de_agua(temperatura)
-        self._anadir:jabon() #parametrod
+
+      # este metodo es publico cuando no tiene guion bajo
+    def lavar(self,temperatura='caliente'):
+        self._llenar_tanque(temperatura)
+        self._anadir_jabon() #parametros o metodos privados
         self._lavar()
-        self.centrifugar()
+        self._centrifugar()
 
     def _llenar_tanque(self,temperatura):#definir los metodos
         print(f'llenando tanque de agua{temperatura}')
 
     def _anadir_jabon(self):
-        print('lavando la ropa')
+        print('anadir jabon')
 
-    def _lavar(self):
+    def _lavar(self): # "_" guion bajo para los metodos privados
         print('lavando ropa')
 
     def _centrifugar(self):
         print('centrifugando la ropa')
+
+if __name__ =='__main__':
+
+    lavadora = Lavadora()  #se genera una instanciadejamos la temperatura por defult que es caliente
+    lavadora.lavar()   #podemos elegir otra temperatura ya sea fria o tibia
+
+    #mandamos a llamar a la funcion
