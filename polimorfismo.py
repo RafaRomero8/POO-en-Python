@@ -12,7 +12,8 @@ class Ciclista(Persona):
     def avanza(self):
         print('estoy conduciendo mi bicla')#polimorfismo
 
-def main():
+def main():#punto de entrada
+
     persona = Persona('David')
     persona.avanza()
 
