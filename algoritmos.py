@@ -12,10 +12,10 @@ def factorial(n):#recibimos un numero factorial
 def factorial_r(n):#factorial recursivo
     if n==1: #si en es igual a uno,regresa uno
         return 1
-    return  n * factorial(n-1)
+    return  n * factorial_r(n-1)
 
 if __name__ =='__main__':
-    n = 100000 #definimos n
+    n = 100 #definimos n
 
     comienzo = time.time()#se ejecuta el modulo time en el comienzo
     factorial(n)
