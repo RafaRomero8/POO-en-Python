@@ -8,7 +8,8 @@ def busqueda_lineal(lista, objetivo):
             match = True#asignacion
             break#salir del bucle
 
-    return  match
+    return  match#retornar valor
+
 
 if __name__ == '__main__':
     tamano_de_lista = int(input('de que tamaño sera la lista'))#preguntar al usuario el tamaño de lista
