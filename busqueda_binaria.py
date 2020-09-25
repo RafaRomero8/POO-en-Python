@@ -1,5 +1,6 @@
 import random
 def busqueda_binaria(lista,comienzo,final,objetivo): #se recibe una lista comienzo final y objetivo
+    print(f'buscando {objetivo} entre {lista[comienzo]} y {lista[final - 1]}')
     if comienzo > final:#si el comienzo es mas grande que el final termina
         return  False   #si no es cierto se divide a la mitad
 
