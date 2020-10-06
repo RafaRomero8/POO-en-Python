@@ -14,7 +14,7 @@ def morral(tamano_morral, pesos, valores, n):#variable n cual es el indice que e
 if __name__ == '__main__':
     valores = [60, 100, 120]
     pesos = [10, 20, 30]
-    tamano_morral = 50
+    tamano_morral = 25
     n = len(valores)
 
     resultado = morral(tamano_morral, pesos, valores, n)
